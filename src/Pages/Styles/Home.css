@@ -1,0 +1,8 @@
+.HomePage{
+    display: flex;
+    height: 100%;
+    transition-duration: 10s;
+    justify-content: center;
+    /* margin-top: -60px; */
+    /* transition-delay: 1s; */
+}

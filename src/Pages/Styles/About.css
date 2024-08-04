@@ -1,0 +1,74 @@
+#about{
+    background-image: linear-gradient(#07081f, #050313);
+    /* background-color: #07081f; */
+    /* 07081f */
+    color: rgb(255, 255, 255);
+    display:flex;
+    flex-direction: column;
+    /* gap:20px; */
+    justify-content: center;
+    /* padding-top: 20px; */
+    padding: 20px 100px 0px 100px;   
+}
+
+.WhoAmI{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+    /* margin-right: 100px; */
+}
+
+.whoAmIComponent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    border-color: rgba(69, 60, 147, 0.74);
+    background-color: #101129;
+    box-shadow: 5px 10px rgba(1, 0, 9, 0.74);
+    border-radius: 20px;
+    border-width: thick;
+    border-style: double;
+    /* gap:80px; */
+    /* padding: 30px 20px 30px 20px; */
+    margin: 20px 0px 20px 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#cartoonMe{
+    width: 300px;
+}
+
+.WhoAmIDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    /* padding: 0px 150px 0px 150px; */
+}
+
+.WAIInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+#me{
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 1305px){
+    #me{
+        margin-right: -130px;
+    }
+    .WhoAmI{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* gap: 50px; */
+        color: white;
+        margin-left: -100px;
+    }
+}

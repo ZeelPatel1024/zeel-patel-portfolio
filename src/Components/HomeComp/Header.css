@@ -1,0 +1,95 @@
+#Name{
+    font-size: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: -60px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: -20px;
+}
+
+#githublogo{
+    width: 40px;
+}
+
+.NameComponent{
+    display: flex;
+    /* flex-direction: column; */
+    /* gap: 10px; */
+    margin: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameBox{
+    color: white;
+    border-radius: 20px;
+    /* border-width: thick; */
+    /* border-style: double; */
+    padding: 50px 200px 50px 200px;
+    width: 100%;
+}
+
+@media (max-width: 1305px){
+    .NameComponent{
+        display: flex;
+        margin: 250px 100px 250px 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nameBox{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 100px 10px 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1065px){
+    .NameComponent{
+        display: flex;
+        margin: 250px 100px 250px 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nameBox{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 100px 10px 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 745px){
+    .NameComponent{
+        display: flex;
+        margin: 250px 100px 250px 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nameBox{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px 10px 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,15 @@
+.vl {
+    border-left: 2px dashed rgb(255, 255, 255);
+    height: 100%;
+    margin-left: 15px;
+}
+
+.deco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+    /* gap:50px; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
+}

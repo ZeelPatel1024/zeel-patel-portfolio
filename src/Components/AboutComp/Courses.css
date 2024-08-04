@@ -1,0 +1,18 @@
+.CourseBox{
+    background-color: #392467;
+    color: white;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 1305px){
+    .CourseBox{
+        background-color: #392467;
+        color: white;
+        border-radius: 10px;
+        padding: 0px 10px 0px 10px;
+        font-size: 15px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
