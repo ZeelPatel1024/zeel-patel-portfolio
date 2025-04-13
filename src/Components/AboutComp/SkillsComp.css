@@ -46,3 +46,88 @@
     gap:10px;
     margin-top: 30px;
 }
+
+@media (max-width: 1305px){
+    .skillsBox{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        width: 15%;
+        height: 280px;
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 10px;
+        border-width:3px;
+        border-style:groove;
+        background-color: #0d0d0d;
+        box-shadow: 5px 10px rgba(1, 0, 9, 0.74);
+        border-color: #0c0d2d5f;
+        flex: 0 0 25%; /* no grow, no shrink, 25% width */
+        margin: 30px;
+    }
+
+    #skillsLogo{
+        width: 60px;
+        height: 60px;
+        margin-top: 5px;
+        /* padding: 10px 10px 10px 10px; */
+    }
+}
+
+@media (max-width: 1205px){
+    .skillsBox{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        width: calc(100% / 5); /* = 33.33% */
+        height: 280px;
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 10px;
+        border-width:3px;
+        border-style:groove;
+        background-color: #0d0d0d;
+        box-shadow: 5px 10px rgba(1, 0, 9, 0.74);
+        border-color: #0c0d2d5f;
+        flex: 0 0 25%; /* no grow, no shrink, 25% width */
+        margin: 20px;
+    }
+
+    #skillsLogo{
+        width: 60px;
+        height: 60px;
+        margin-top: 5px;
+        /* padding: 10px 10px 10px 10px; */
+    }
+}
+
+@media (max-width: 1105px){
+    .skillsBox{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        width: calc(100% / 4); /* = 33.33% */
+        height: 280px;
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 10px;
+        border-width:3px;
+        border-style:groove;
+        background-color: #0d0d0d;
+        box-shadow: 5px 10px rgba(1, 0, 9, 0.74);
+        border-color: #0c0d2d5f;
+        margin: 10px;
+        /* padding: 0px; */
+    }
+
+    #skillsLogo{
+        width: 60px;
+        height: 60px;
+        margin-top: 5px;
+        /* padding: 10px 10px 10px 10px; */
+    }
+}
+

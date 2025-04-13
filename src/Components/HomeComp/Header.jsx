@@ -5,6 +5,7 @@ import emaillogo from '../../Images/gmaillogo.png'
 import documentlogo from '../../Images/documentlogo.png'
 import linkdinlogo from '../../Images/linkdinlogo.png'
 import Typewriter from 'typewriter-effect';
+import myPDF from "../../resume/Zeel_Resume_Updated_2025.pdf";
 
 
 function Header() {
@@ -22,10 +23,26 @@ function Header() {
           }}
         /> &#62;</p>
         <div className='logos'>
-          <img id = "githublogo" src={githublogo}></img>
-          <img id = "githublogo" src={emaillogo}></img>
-          <img id = "githublogo" src={documentlogo}></img>
+          <a href="https://github.com/ZeelPatel1024" target="_blank" rel="noopener noreferrer">
+            <img id = "githublogo" src={githublogo} ></img>
+          </a>
+         
+          <a 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=zeelpatel2423@gmail.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+           <img id = "emaillogo" src={emaillogo}></img>
+          </a>
+          <a href={myPDF} target="_blank" rel="noopener noreferrer">
+            <img id = "githublogo" src={documentlogo}></img>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/zeel-patel2212/" target="_blank" rel="noopener noreferrer">
           <img id = "githublogo" src={linkdinlogo}></img>
+          </a>
+
+          
         </div>
         <br></br>
     </div>

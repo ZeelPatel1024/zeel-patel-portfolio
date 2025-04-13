@@ -1,0 +1,28 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .carousel-window {
+    overflow: hidden;
+    width: 636px; /* 3 items * 200px + 2 * 16px gap */
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 200px;
+    height: 150px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  

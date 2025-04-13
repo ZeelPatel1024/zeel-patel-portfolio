@@ -13,8 +13,17 @@ import AcornLogo from '../Images/jobsLogo/acornlogo.jpeg'
 
 
 export const Experience = () => {
+  const backgroundStyle = {
+    background: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #01010c 120%), url(${twilightbackground})`,
+    backgroundSize: "cover",      // Ensures the image covers the entire div
+    backgroundPosition: "center", // Centers the background image
+    backgroundRepeat: "no-repeat", // Prevents the image from repeating
+    justifyContent: 'center',
+    alignItems: 'center'
+  };
+
   return (
-    <div id="experience" style={{ backgroundImage: `url(${twilightbackground})`, backgroundSize:"cover", backgroundPosition: 'center', justifyContent: 'center', alignItems: 'center'}}>
+    <div id="experience" style={backgroundStyle}>
       <br></br>
       <h1>My Experience Journey</h1>
       <br></br>

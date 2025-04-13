@@ -24,6 +24,11 @@
     width: 40px;
 }
 
+#emaillogo{
+    width: 40px;
+    height: 40px;
+}
+
 .NameComponent{
     display: flex;
     /* flex-direction: column; */

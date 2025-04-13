@@ -17,8 +17,8 @@ import SqlLogo from '../../Images/skillsLogo/sqllogo.png'
 
 function AboutBoxImgRight() {
   return (
-    <div>
-        <h1>Skills</h1>
+    <div className='aboutBoxImgRight'>
+        {/* <h1 id='skills'>Skills</h1> */}
 
         <div className='aboutBoxRight'>
 

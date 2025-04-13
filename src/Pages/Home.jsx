@@ -12,6 +12,15 @@ import './Styles/Home.css'
 export const Home = () => {
   const [myBackground, setBackground] = useState(backgroundToronto);
 
+  const backgroundStyle = {
+    background: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #01010c 120%), url(${myBackground})`,
+    backgroundSize: "cover",      // Ensures the image covers the entire div
+    backgroundPosition: "center", // Centers the background image
+    backgroundRepeat: "no-repeat", // Prevents the image from repeating
+    height: "100vh",               // Full height of the viewport
+    width: "100%", 
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setBackground(randomBackground());
@@ -21,7 +30,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className='HomePage' style={{ backgroundImage: `url(${myBackground})`, backgroundSize:"cover", backgroundPosition: 'center'}}>
+    <div className='HomePage' style={backgroundStyle}>
       {/* <Navbar></Navbar> */}
       <Header></Header>
       {/* <img style ={{width: 500, height: 500}} src={cartoonMe}></img> */}

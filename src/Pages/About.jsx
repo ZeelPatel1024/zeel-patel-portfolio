@@ -40,24 +40,38 @@ export const About = () => {
             </div>
       </motion.div>
 
-      <motion.div
-        whileInView={{ x: 0, // Start at the final position (0)
-        opacity: 1,  transition: { duration: 3 }}} initial={{x: '10vw', opacity: 0}}>
-          <AboutBoxComp 
-            title = "Education"
-            picture = {UICImg}
-            compdescription = "I completed my highschool diploma at James B Conant highschool where I took Computer Science classes and AP Classes. Furthermore, I am pursuing a bachelors Engineering degree in Computer Science at the University of Ilinois at Chicago."
-            moreinfo = "UIC GPA: 4.0 &#124; AP CSP: 5 &#124; AP CSA: 4 &#124; AP Calc B: 4 &#124; AP Phys C: 4"
-          />
-      </motion.div>
+      <div className='education'>
 
-      <motion.div
-        whileInView={{ x: 0, // Start at the final position (0)
-        opacity: 1,  transition: { duration: 3 }}} initial={{x: '-10vw', opacity: 0}}
-        >
-          <AboutBoxImgRight></AboutBoxImgRight>
-        </motion.div>
-        <br></br>
+        <motion.div
+            whileInView={{ x: 0, // Start at the final position (0)
+            opacity: 1,  transition: { duration: 3 }}} initial={{x: '10vw', opacity: 0}}>
+              <AboutBoxComp 
+                title = "Education"
+                picture = {UICImg}
+                compdescription = "I completed my highschool diploma at James B Conant highschool where I took Computer Science classes and AP Classes. Furthermore, I am pursuing a bachelors Engineering degree in Computer Science at the University of Ilinois at Chicago."
+                moreinfo = "UIC GPA: 4.0 &#124; AP CSP: 5 &#124; AP CSA: 4 &#124; AP Calc B: 4 &#124; AP Phys C: 4"
+              />
+          </motion.div>
+
+      </div>
+      
+
+
+        <div className='skills'>
+
+          <h1>Skills</h1>
+
+          <motion.div
+            whileInView={{ x: 0, // Start at the final position (0)
+            opacity: 1,  transition: { duration: 3 }}} initial={{x: '-10vw', opacity: 0}}
+            >
+              <AboutBoxImgRight></AboutBoxImgRight>
+            </motion.div>
+            <br></br>
+          
+        </div>
+        
+      
     </div>
     
   )
