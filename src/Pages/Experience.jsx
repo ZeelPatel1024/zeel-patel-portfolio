@@ -50,7 +50,7 @@ export const Experience = () => {
 
         <motion.div className='indJobComp'
         whileInView={{ x: 0, // Start at the final position (0)
-        opacity: 1,  transition: { duration: 3 }}} initial={{x: '-10vw', opacity: 0}}>
+        opacity: 1,  transition: { duration: 3 }}} initial={{x: '10vw', opacity: 0}}>
         
           <JobComp
           logo = {WiCSLogo}
@@ -72,7 +72,7 @@ export const Experience = () => {
         <br></br>
         <motion.div className='indJobComp'
         whileInView={{ x: 0, // Start at the final position (0)
-        opacity: 1,  transition: { duration: 3 }}} initial={{x: '10vw', opacity: 0}}
+        opacity: 1,  transition: { duration: 3 }}} initial={{x: '-10vw', opacity: 0}}
         >
           <LineAndBorder
             text = "h1"
@@ -94,7 +94,7 @@ export const Experience = () => {
         <br></br>
         <motion.div className='indJobComp'
         whileInView={{ x: 0, // Start at the final position (0)
-        opacity: 1,  transition: { duration: 3 }}} initial={{x: '-10vw', opacity: 0}}>
+        opacity: 1,  transition: { duration: 3 }}} initial={{x: '10vw', opacity: 0}}>
         
         <JobComp
           logo = {CycLogo}
@@ -114,7 +114,7 @@ export const Experience = () => {
         <br></br>
         <motion.div className='indJobComp'
         whileInView={{ x: 0, // Start at the final position (0)
-        opacity: 1,  transition: { duration: 3 }}} initial={{x: '10vw', opacity: 0}}>
+        opacity: 1,  transition: { duration: 3 }}} initial={{x: '-10vw', opacity: 0}}>
           <LineAndBorder
             text = "h1"
             textColor = '#4c8fc2'
@@ -134,7 +134,7 @@ export const Experience = () => {
         <br></br>
         <motion.div className='indJobComp'
         whileInView={{ x: 0, // Start at the final position (0)
-        opacity: 1,  transition: { duration: 3 }}} initial={{x: '-10vw', opacity: 0}}>
+        opacity: 1,  transition: { duration: 3 }}} initial={{x: '10vw', opacity: 0}}>
         
           <JobComp
           logo = {CskLogo}
