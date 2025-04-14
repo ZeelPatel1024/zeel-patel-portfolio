@@ -1,4 +1,4 @@
-.CourseBox{
+.LangBox{
     background-color: #392467;
     color: white;
     border-radius: 10px;
@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 1305px){
-    .CourseBox{
+    .LangBox{
         background-color: #392467;
         color: white;
         border-radius: 10px;
@@ -17,8 +17,8 @@
     }
 }
 
-/* @media (max-width: 1122px) {
-    .CourseBox{
+@media (max-width: 1122px) {
+    .LangBox{
         background-color: #392467;
         color: white;
         border-radius: 10px;
@@ -28,4 +28,4 @@
     }
 
     
-  } */
+  }

@@ -62,8 +62,8 @@ export const About = () => {
           <h1>Skills</h1>
 
           <motion.div
-            whileInView={{ x: 0, // Start at the final position (0)
-            opacity: 1,  transition: { duration: 3 }}} initial={{x: '-10vw', opacity: 0}}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 2 } }}
             >
               <AboutBoxImgRight></AboutBoxImgRight>
             </motion.div>

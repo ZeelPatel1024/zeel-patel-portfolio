@@ -1,0 +1,150 @@
+/* .projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 20px;
+  }
+  
+  /* Make each project take 1/3 of the row on larger screens */
+  /* .courses {
+    flex: 1 1 calc(33.33% - 24px);
+    max-width: calc(33.33% - 24px);
+  }  */
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.project {
+    width: 400px;
+    height: 450px;
+    padding: 100px;
+    background: #f0f0f000;
+    border: 1px solid #ddd;
+    margin-right: 16px;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 50px;
+    border-style: double;
+    border-width: 10px;
+  
+    padding: 20px;
+    box-sizing: border-box;
+    
+  }
+  
+  #projectimg {
+    width: 100%;
+    height: auto;
+    max-height: 240px;
+    border-radius: 50px;
+    object-fit: cover;
+  }
+  
+  .description h1,
+  .description p {
+    margin: 0;
+    text-align: center;
+  }
+
+  #date{
+    font-weight:lighter;
+  }
+  
+  #descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 10px;
+  }
+  
+  @media (max-width: 1424px) {
+    .project {
+        width: 300px;
+        height: 400px;
+    }
+
+    #name {
+        font-size: 25px;
+      }
+  
+    #projectimg {
+      /* max-height: 200px; */
+      height:150px;
+    }
+  
+    #descriptions {
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 1122px) {
+    .project {
+        width: 250px;
+        height: 350px;
+        padding: 20px;
+    }
+  
+    #projectimg {
+      height:150px;
+    }
+  
+    #name {
+      font-size: 25px;
+    }
+    #shortdes {
+        font-size: 15px;
+      }
+
+    
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .project {
+        width: 300px;
+        height: 400px;
+    }
+  
+    #projectimg {
+      max-height: 200px;
+    }
+  
+    #descriptions {
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project {
+      padding: 16px;
+      border-width: 6px;
+      border-radius: 30px;
+    }
+  
+    #projectimg {
+      max-height: 180px;
+    }
+  
+    .description h1 {
+      font-size: 1.2rem;
+    }
+  
+    .description p {
+      font-size: 0.95rem;
+    }
+  }
+  

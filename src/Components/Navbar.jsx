@@ -33,9 +33,9 @@ function Navbar() {
                 <li>
                     <Link smooth spy to="#projects">Projects</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link smooth spy to="#contact">Contact</Link>
-                </li>
+                </li> */}
             </ul>
         </nav>
     );

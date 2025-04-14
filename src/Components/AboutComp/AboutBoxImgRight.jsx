@@ -14,6 +14,7 @@ import PythonLogo from '../../Images/skillsLogo/pythonlogo.png'
 import ReactNativeLogo from '../../Images/skillsLogo/reactnativelogo.png'
 import SpringLogo from '../../Images/skillsLogo/springbootlogo.png'
 import SqlLogo from '../../Images/skillsLogo/sqllogo.png'
+import Astro from '../../Images/skillsLogo/astro.webp'
 
 function AboutBoxImgRight() {
   return (
@@ -92,6 +93,13 @@ function AboutBoxImgRight() {
                 yoe = "1"
                 projects = "5"
                 level = "Proficent"
+            />
+             <SkillsComp
+                LogoPicture = {Astro}
+                LangName = "Astro"
+                yoe = "0.5"
+                projects = "1"
+                level = "Beginner"
             />
         </div>
     </div>

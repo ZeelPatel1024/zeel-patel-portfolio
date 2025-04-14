@@ -4,8 +4,8 @@ import "./Carousel.css";
 const Carousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const visibleCount = 3;
-  const itemWidth = 200 + 16; // 200px + 16px margin-right from CSS
+  const visibleCount = 9;
+  const itemWidth = 1232 + 16; // 200px + 16px margin-right from CSS
 
   const next = () => {
     if (currentIndex + visibleCount < items.length) {

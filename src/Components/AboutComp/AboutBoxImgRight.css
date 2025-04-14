@@ -27,6 +27,8 @@
     flex-direction: row;
     /* grid-direction: row; */
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     /* align-content: flex-start; */
     /* margin:0px; */
     width: 100%;
