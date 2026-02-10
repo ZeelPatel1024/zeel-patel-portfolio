@@ -1,19 +1,19 @@
-#about{
+#about {
     background-image: linear-gradient(#01010c, #050313);
     /* background-color: #07081f; */
     /* 07081f */
     color: rgb(255, 255, 255);
-    display:flex;
+    display: flex;
     flex-direction: column;
     /* gap:20px; */
     justify-content: center;
     /* align-items: center; */
     /* padding-top: 20px; */
-    padding: 20px 100px 0px 100px;   
+    padding: 20px 100px 0px 100px;
     /* width: 100%; */
 }
 
-.WhoAmI{
+.WhoAmI {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -21,14 +21,14 @@
     /* margin-right: 100px; */
 }
 
-.whoAmIComponent{
+.whoAmIComponent {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
     border-color: rgba(69, 60, 147, 0.74);
-    background-color: #101129;
+    background-color: #10112900;
     box-shadow: 5px 10px rgba(1, 0, 9, 0.74);
     border-radius: 20px;
     border-width: thick;
@@ -38,14 +38,14 @@
     /* padding: 30px 20px 30px 20px; */
     margin: 20px 0px 20px 10x;
     padding: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#cartoonMe{
+#cartoonMe {
     width: 300px;
 }
 
-.WhoAmIDescription{
+.WhoAmIDescription {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,73 +53,76 @@
     /* padding: 0px 150px 0px 150px; */
 }
 
-.WAIInfo{
+.WAIInfo {
     display: flex;
     flex-direction: row;
     gap: 0px;
 }
 
-#me{
+#me {
     font-size: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* max-width: 600px; */
 }
 
-@media (max-width: 1305px){
-    #me{
+@media (max-width: 1305px) {
+    #me {
         margin-right: -130px;
     }
-    .WhoAmI{
+
+    .WhoAmI {
         display: flex;
         flex-direction: row;
         justify-content: center;
         /* gap: 50px; */
         color: white;
     }
-    #cartoonMe{
+
+    #cartoonMe {
         width: 200px;
         height: 200px;
     }
-    #me{
+
+    #me {
         font-size: 15px;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         max-width: 500px;
     }
 }
 
-@media (max-width: 1205px){
+@media (max-width: 1205px) {
 
     /* .skills{
         margin-left: 200px;
     } */
 
-    #me{
+    #me {
         font-size: 15px;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         max-width: 400px;
     }
 }
 
-@media (max-width: 1105px){
-    .education{
+@media (max-width: 1105px) {
+    .education {
         margin-left: -50px;
     }
 }
 
 
-@media (max-width: 781px){
+@media (max-width: 781px) {
 
-    .education{
+    .education {
         margin-left: -80px;
     }
 
-    #cartoonMe{
+    #cartoonMe {
         margin-right: -50px;
     }
 
-    #me{
+    #me {
         font-size: 15px;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         max-width: 350px;
     }
 }

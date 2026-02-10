@@ -1,18 +1,19 @@
-#Name{
-    font-size: 100px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#Name {
+    margin-top: -20px;
+    font-size: 130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#description{
+#description {
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-size: 50px;
-    margin-top: -60px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.logos{
+.logos {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -20,17 +21,19 @@
     margin-top: -20px;
 }
 
-#githublogo{
+#githublogo {
     width: 40px;
 }
 
-#emaillogo{
+#emaillogo {
     width: 40px;
     height: 40px;
 }
 
-.NameComponent{
+.NameComponent {
     display: flex;
+    position: relative;
+    z-index: 10;
     /* flex-direction: column; */
     /* gap: 10px; */
     margin: 250px;
@@ -38,7 +41,7 @@
     justify-content: center;
 }
 
-.nameBox{
+.nameBox {
     color: white;
     border-radius: 20px;
     /* border-width: thick; */
@@ -47,14 +50,15 @@
     width: 100%;
 }
 
-@media (max-width: 1305px){
-    .NameComponent{
+@media (max-width: 1305px) {
+    .NameComponent {
         display: flex;
         margin: 250px 100px 250px 100px;
         align-items: center;
         justify-content: center;
     }
-    .nameBox{
+
+    .nameBox {
         display: flex;
         flex-direction: column;
         padding: 10px 100px 10px 100px;
@@ -64,14 +68,15 @@
     }
 }
 
-@media (max-width: 1065px){
-    .NameComponent{
+@media (max-width: 1065px) {
+    .NameComponent {
         display: flex;
         margin: 250px 100px 250px 100px;
         align-items: center;
         justify-content: center;
     }
-    .nameBox{
+
+    .nameBox {
         display: flex;
         flex-direction: column;
         padding: 10px 100px 10px 100px;
@@ -82,14 +87,15 @@
 }
 
 
-@media (max-width: 745px){
-    .NameComponent{
+@media (max-width: 745px) {
+    .NameComponent {
         display: flex;
         margin: 250px 100px 250px 100px;
         align-items: center;
         justify-content: center;
     }
-    .nameBox{
+
+    .nameBox {
         display: flex;
         flex-direction: column;
         padding: 10px 20px 10px 20px;

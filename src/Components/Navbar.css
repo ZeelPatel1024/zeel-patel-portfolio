@@ -1,17 +1,26 @@
-.active{
+.active {
     background-color: #d3d8c1;
 }
 
-nav{
+nav {
     display: flex;
     gap: 0;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #0f172a00; */
-    position:absolute;
+    background-color: transparent;
+    position: fixed;
     width: 100%;
-    z-index: 100; /* Ensure it's above other content */
-    top:0;
+    z-index: 100;
+    /* Ensure it's above other content */
+    top: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+    background-color: rgba(1, 1, 12, 0.217);
+    backdrop-filter: blur(5px);
 }
 
 /* .headerBox{
@@ -19,7 +28,7 @@ nav{
     justify-content: space-between;
 } */
 
-nav .title{
+nav .title {
     font-size: 1.5rem;
     margin: 1rem;
     font-weight: bold;
@@ -28,15 +37,17 @@ nav .title{
     margin-left: 2%;
 
 }
-nav ul{
+
+nav ul {
     display: flex;
     margin-right: 2%;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     text-decoration: none;
     color: white;
@@ -45,18 +56,19 @@ nav ul li a{
     border-radius: 0.5rem;
 }
 
-nav ul li a:not(.active):hover{
+nav ul li a:not(.active):hover {
     background-color: #172554;
 }
 
-.open{
+.open {
     /* background-color: #0f172a; */
     transition-duration: 10s;
 }
-nav .menu{
+
+nav .menu {
     background-color: #0f172a;
     display: none;
-    position:absolute;
+    position: absolute;
     top: 0.75rem;
     right: 0.5rem;
     flex-direction: column;
@@ -65,39 +77,45 @@ nav .menu{
     height: 2rem;
 }
 
-nav .menu span{
+nav .menu span {
     /* background-color: #0f172a; */
     height: 0.4rem;
     width: 100%;
     background-color: white;
     border-radius: 0.2rem;
 }
-@media (max-width: 780px){
-    nav .menu{
+
+@media (max-width: 780px) {
+    nav .menu {
         /* background-color: #0f172a; */
         display: flex;
     }
-    nav{
+
+    nav {
         background-color: #0f172a;
         flex-direction: column;
         align-items: flex-start;
     }
-    nav ul{
+
+    nav ul {
         /* background-color: #0f172a; */
         display: none;
         flex-direction: column;
         width: 85%;
         margin-bottom: 0.25rem;
     }
-    nav ul.open{
+
+    nav ul.open {
         display: flex;
     }
-    nav ul li{
+
+    nav ul li {
         /* background-color: #0f172a; */
         width: 100%;
         text-align: center;
     }
-    nav ul li a{
+
+    nav ul li a {
         /* background-color: #0f172a; */
         margin: 0.3rem 0.5rem;
     }

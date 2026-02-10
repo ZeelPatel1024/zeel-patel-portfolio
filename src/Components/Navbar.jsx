@@ -1,21 +1,42 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 // import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import { HashLink as Link} from "react-router-hash-link";
+import { HashLink as Link } from "react-router-hash-link";
 import Logo from '../Images/logo.png'
 
 function Navbar() {
 
-    const [menuOpen,setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 50;
+            if (isScrolled !== scrolled) {
+                setScrolled(isScrolled);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [scrolled]);
+
+    const scrollWithOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -80;
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+    }
 
     return (
-        <nav>
+        <nav className={scrolled ? "scrolled" : ""}>
             {/* <div className="headerBox"> */}
-                {/* <img style ={{width: 50, height: 50}}  src={Logo}></img> */}
-                <Link smooth spy to="#" className="title">Zeel Patel</Link>
+            {/* <img style ={{width: 50, height: 50}}  src={Logo}></img> */}
+            <Link smooth to="#" className="title" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Zeel Patel</Link>
             {/* </div> */}
 
-            <div className="menu" onClick={()=> {
+            <div className="menu" onClick={() => {
                 setMenuOpen(!menuOpen);
             }}>
                 <span></span>
@@ -25,13 +46,16 @@ function Navbar() {
 
             <ul className={menuOpen ? "open" : ""}>
                 <li>
-                    <Link smooth spy to="#about" >About</Link>
+                    <Link smooth to="/#about" scroll={el => scrollWithOffset(el)}>About</Link>
                 </li>
                 <li>
-                    <Link smooth spy to="#experience">Experience</Link>
+                    <Link smooth to="/#experience" scroll={el => scrollWithOffset(el)}>Experience</Link>
                 </li>
                 <li>
-                    <Link smooth spy to="#projects">Projects</Link>
+                    <Link to="/projects">Projects</Link>
+                </li>
+                <li>
+                    <Link to="/leadership">Leadership</Link>
                 </li>
                 {/* <li>
                     <Link smooth spy to="#contact">Contact</Link>
@@ -39,6 +63,6 @@ function Navbar() {
             </ul>
         </nav>
     );
-  }
-  
-  export default Navbar;
+}
+
+export default Navbar;

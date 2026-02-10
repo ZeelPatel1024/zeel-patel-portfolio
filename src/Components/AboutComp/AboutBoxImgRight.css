@@ -1,28 +1,31 @@
-.aboutBoxImgRight{
+.aboutBoxImgRight {
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#skills{
+
+#skills {
     margin-left: -150px;
 }
-.headingTitles{
+
+.headingTitles {
     display: flex;
     flex-direction: row;
     gap: 50%;
     margin-left: 100px;
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
-.subheadings{
+
+.subheadings {
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
 
-.aboutBoxRight{
+.aboutBoxRight {
     display: flex;
     flex-direction: row;
     /* grid-direction: row; */
