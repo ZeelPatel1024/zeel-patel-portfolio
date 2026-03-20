@@ -2,7 +2,7 @@ import React from 'react'
 import backgroundToronto from '../Images/newnewtoronto.jpg'
 import backgroundChicago from '../Images/newchicago.jpg'
 import backgroundSanFran from '../Images/newsanfran.jpg'
-import cartoonMe from '../Images/IMG_0065-removebg-preview.png'
+
 import { useEffect, useState } from 'react'
 
 import Header from '../Components/HomeComp/Header'

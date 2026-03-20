@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { HashLink as Link } from "react-router-hash-link";
-import Logo from '../Images/logo.png'
+
 
 function Navbar() {
 
@@ -54,9 +54,9 @@ function Navbar() {
                 <li>
                     <Link to="/projects">Projects</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="/leadership">Leadership</Link>
-                </li>
+                </li> */}
                 {/* <li>
                     <Link smooth spy to="#contact">Contact</Link>
                 </li> */}

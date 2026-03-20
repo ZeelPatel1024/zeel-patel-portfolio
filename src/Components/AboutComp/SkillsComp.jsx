@@ -6,7 +6,7 @@ function SkillsComp(props) {
   return (
     <div className='skillsBox'>
       <h3 id="languageName">{props.LangName}</h3>
-      <img id="skillsLogo" src={props.LogoPicture}></img>
+      <img id="skillsLogo" src={props.LogoPicture} alt=""></img>
 
 
 

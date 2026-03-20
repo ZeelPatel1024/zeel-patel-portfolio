@@ -1,14 +1,12 @@
 import React from 'react'
 import './Styles/About.css'
-import ScrollAnimation from 'react-animate-on-scroll'
+
 import AboutBoxComp from '../Components/AboutComp/AboutBoxComp'
 import AboutBoxImgRight from '../Components/AboutComp/AboutBoxImgRight'
 import UICImg from '../Images/uic.jpeg'
-import CartoonMe from '../Images/IMG_0065-removebg-preview.png'
+
 import LineAndBorder from '../Components/AboutComp/LineAndBorder'
-import { motion, useScroll, useAnimation } from "framer-motion"
-import { useInView } from 'react-intersection-observer'
-import { useEffect } from 'react'
+import { motion } from "framer-motion"
 import Courses from '../Components/AboutComp/Courses'
 
 export const About = () => {

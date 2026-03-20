@@ -24,9 +24,9 @@ function Header() {
             }}
 
           /> &#62;</p>
-        {/* <div className='logos'>
+        <div className='logos'>
           <a href="https://github.com/ZeelPatel1024" target="_blank" rel="noopener noreferrer">
-            <img id="githublogo" src={githublogo} ></img>
+            <img id="githublogo" src={githublogo} alt="GitHub Logo" ></img>
           </a>
 
           <a
@@ -34,18 +34,18 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img id="emaillogo" src={emaillogo}></img>
+            <img id="emaillogo" src={emaillogo} alt="Email Logo"></img>
           </a>
           <a href={myPDF} target="_blank" rel="noopener noreferrer">
-            <img id="githublogo" src={documentlogo}></img>
+            <img id="githublogo" src={documentlogo} alt="Document Logo"></img>
           </a>
 
           <a href="https://www.linkedin.com/in/zeel-patel2212/" target="_blank" rel="noopener noreferrer">
-            <img id="githublogo" src={linkdinlogo}></img>
+            <img id="githublogo" src={linkdinlogo} alt="LinkedIn Logo"></img>
           </a>
 
 
-        </div> */}
+        </div>
         <br></br>
       </div>
 
