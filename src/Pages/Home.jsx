@@ -9,25 +9,42 @@ import Header from '../Components/HomeComp/Header'
 import Navbar from '../Components/Navbar'
 import './Styles/Home.css'
 
+const backgrounds = [backgroundToronto, backgroundChicago, backgroundSanFran];
+
 export const Home = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
-  const backgrounds = [backgroundToronto, backgroundChicago, backgroundSanFran];
 
   useEffect(() => {
+    // Preload all background images to prevent white flash/flicker
+    backgrounds.forEach((bg) => {
+      const img = new Image();
+      img.src = bg;
+    });
+  }, []);
+
+  useEffect(() => {
+    console.log("Setting up background slideshow interval");
     const interval = setInterval(() => {
-      setBackgroundIndex((prevIndex) => (prevIndex + 1) % backgrounds.length);
+      setBackgroundIndex((prevIndex) => {
+        const nextIndex = (prevIndex + 1) % backgrounds.length;
+        console.log(`Slideshow interval fired: prevIndex=${prevIndex}, nextIndex=${nextIndex}`);
+        return nextIndex;
+      });
     }, 6000);
 
-    return () => clearInterval(interval);
-  }, [backgrounds.length]);
+    return () => {
+      console.log("Clearing background slideshow interval");
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
-    <div className='HomePage' style={{ position: 'relative', height: '100vh', width: '100%', overflow: 'hidden', backgroundColor: '#01010c' }}>
+    <div className='HomePage' style={{ position: 'relative', height: '100vh', width: '100%', overflow: 'hidden', backgroundColor: 'transparent' }}>
       {backgrounds.map((bg, index) => (
         <div
           key={index}
           style={{
-            position: 'absolute',
+            position: 'fixed',
             top: 0,
             left: 0,
             width: '100%',
@@ -37,7 +54,8 @@ export const Home = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             opacity: index === backgroundIndex ? 1 : 0,
-            transition: 'opacity 1s ease-in-out'
+            transition: 'opacity 1s ease-in-out',
+            zIndex: -1
           }}
         />
       ))}

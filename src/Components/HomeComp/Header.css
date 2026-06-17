@@ -1,106 +1,207 @@
-#Name {
-    margin-top: -20px;
-    font-size: 130px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-#description {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 50px;
-    margin-top: -80px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.logos {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 30px;
-    margin-top: -20px;
-}
-
-#githublogo {
-    width: 40px;
-}
-
-#emaillogo {
-    width: 40px;
-    height: 40px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 .NameComponent {
     display: flex;
     position: relative;
     z-index: 10;
-    /* flex-direction: column; */
-    /* gap: 10px; */
-    margin: 250px;
+    margin: 180px auto;
+    max-width: 1200px;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .nameBox {
     color: white;
-    border-radius: 20px;
-    /* border-width: thick; */
-    /* border-style: double; */
-    padding: 50px 200px 50px 200px;
+    padding: 2rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-@media (max-width: 1305px) {
+/* Tagline styling */
+.tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(0.9rem, 1.8vw, 1.25rem);
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    color: #caa355;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Name styling */
+#Name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.2rem, 8.2vw, 8.5rem);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #caa355;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.65), 0 0 1px rgba(202, 163, 85, 0.45);
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+/* Subtitle container with horizontal gold lines */
+.subtitle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 2.2rem;
+}
+
+.subtitle-line {
+    height: 1px;
+    flex-grow: 1;
+    max-width: 180px;
+    position: relative;
+}
+
+.subtitle-line.left {
+    background: linear-gradient(90deg, transparent, #caa355 60%, #caa355);
+}
+
+.subtitle-line.right {
+    background: linear-gradient(270deg, transparent, #caa355 60%, #caa355);
+}
+
+/* Small diamonds at the ends of the line */
+.subtitle-line::before, .subtitle-line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #caa355;
+    transform: translateY(-50%) rotate(45deg);
+    box-shadow: 0 0 4px #caa355;
+}
+
+.subtitle-line.left::before {
+    left: 0; /* outer end */
+}
+
+.subtitle-line.left::after {
+    right: 0; /* inner end */
+}
+
+.subtitle-line.right::before {
+    left: 0; /* inner end */
+}
+
+.subtitle-line.right::after {
+    right: 0; /* outer end */
+}
+
+#description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.4rem, 3.4vw, 2.6rem);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: #eae6df;
+    margin: 0;
+    white-space: nowrap;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Make sure the typewriter cursor is gold */
+.Typewriter__cursor {
+    color: #caa355 !important;
+    text-shadow: 0 0 6px #caa355;
+    font-weight: 300;
+}
+
+/* Logos (Social Icons) Container */
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 0.5rem;
+}
+
+/* Rounded square with gold border wrapper for each logo */
+.logos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background-color: rgba(1, 1, 12, 0.55);
+    border: 1px solid rgba(202, 163, 85, 0.28);
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logos a:hover {
+    transform: translateY(-4px) scale(1.06);
+    border-color: #caa355;
+    background-color: rgba(202, 163, 85, 0.08);
+    box-shadow: 0 6px 15px rgba(202, 163, 85, 0.2), 0 0 10px rgba(202, 163, 85, 0.1);
+}
+
+/* Make images fit nicely inside the squares */
+.logos a img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logos a:hover img {
+    transform: scale(1.05);
+}
+
+#emaillogo {
+    width: 24px;
+    height: 24px;
+}
+
+#githublogo {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsiveness overrides */
+@media (max-width: 768px) {
     .NameComponent {
-        display: flex;
-        margin: 250px 100px 250px 100px;
-        align-items: center;
-        justify-content: center;
+        margin: 140px auto;
+        padding: 0 20px;
+    }
+    
+    .nameBox {
+        padding: 1rem;
     }
 
-    .nameBox {
-        display: flex;
-        flex-direction: column;
-        padding: 10px 100px 10px 100px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
+    .subtitle-line {
+        max-width: 60px; /* shorter lines on mobile */
+    }
+
+    .logos a {
+        width: 46px;
+        height: 46px;
+    }
+
+    .logos a img {
+        width: 20px;
+        height: 20px;
     }
 }
 
-@media (max-width: 1065px) {
-    .NameComponent {
-        display: flex;
-        margin: 250px 100px 250px 100px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .nameBox {
-        display: flex;
-        flex-direction: column;
-        padding: 10px 100px 10px 100px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-
-@media (max-width: 745px) {
-    .NameComponent {
-        display: flex;
-        margin: 250px 100px 250px 100px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .nameBox {
-        display: flex;
-        flex-direction: column;
-        padding: 10px 20px 10px 20px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
+@media (max-width: 480px) {
+    .subtitle-line {
+        display: none; /* hide lines on very small screens to make room for text */
     }
 }

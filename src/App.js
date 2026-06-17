@@ -16,9 +16,9 @@ function App() {
             <Home />
             <About />
             <Experience />
+            <Projects />
           </>
         } />
-        <Route path="/projects" element={<Projects />} />
         <Route path="/leadership" element={<Leadership />} />
       </Routes>
       <Footer />

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "google-ads",
+    "logoKey": "google",
+    "jobTitle": "Associate Software Developer Intern",
+    "company": "Google LLC | Google Ads",
+    "team": "Conversion Collection",
+    "date": "May 2025 – Aug 2025",
+    "location": "Remote",
+    "type": "Internship",
+    "field": "Software Engineering",
+    "overview": "Worked on improving the reliability and performance of conversion tracking systems used across Google Ads.",
+    "points": [
+      "Built scalable error logging and diagnostics for non-replayable user conversion traffic.",
+      "Validated and rolled out project outputs through full coverage tests and SQL queries.",
+      "Improved data accuracy and reduced conversion tracking issues across global systems."
+    ],
+    "technologies": ["C++", "SQL", "Python", "Bash", "gRPC", "Linux"]
+  },
+  {
+    "id": "google-fi",
+    "logoKey": "google",
+    "jobTitle": "Associate Software Developer Intern",
+    "company": "Google LLC | Google Fi",
+    "team": "Fraud & Abuse",
+    "date": "May 2024 – Aug 2024",
+    "location": "Remote",
+    "type": "Internship",
+    "field": "Software Engineering",
+    "overview": "Designed and implemented automated data pipelines and visual analytics dashboards for Google Fi fraud detection.",
+    "points": [
+      "Architected an automated daily running C++ pipeline, simplifying Google Fi latency by 90 percent.",
+      "Created a workflow that queried data in SQL to a dashboard to display statistical information.",
+      "Drafted comprehensive pipeline and dashboard design docs with detailed workflow descriptions."
+    ],
+    "technologies": ["C++", "SQL", "BigQuery", "Data Pipelines", "Dashboards"]
+  },
+  {
+    "id": "wics",
+    "logoKey": "wics",
+    "jobTitle": "WiCS Dev Project",
+    "company": "Women in Computer Science",
+    "team": "Web Development",
+    "date": "Jan 2025 – May 2025",
+    "location": "Chicago, IL",
+    "type": "Project Member",
+    "field": "Web Development",
+    "overview": "Collaborated in a team of front-end developers to build the official club website for the Women in Computer Science organization.",
+    "points": [
+      "Assisted in creating the official club website using Astro and Tailwind CSS.",
+      "Developed fully responsive socials, timeline, and styled event components.",
+      "Collaborated with a large team using Git/GitHub to ensure seamless integration."
+    ],
+    "technologies": ["Astro", "Tailwind CSS", "JavaScript", "Git", "GitHub"]
+  },
+  {
+    "id": "code-instructor",
+    "logoKey": "code",
+    "jobTitle": "Code Instructor",
+    "company": "Self Employed",
+    "team": "Education",
+    "date": "Jun 2023 – Present",
+    "location": "Chicago, IL",
+    "type": "Part-time",
+    "field": "CS Education",
+    "overview": "Instructed students in computer programming and software development concepts.",
+    "points": [
+      "Taught coding logic, problem-solving, and web concepts to young students.",
+      "Developed custom lesson plans for python, web development, and game creation.",
+      "Assisted students in debugging programs and projects."
+    ],
+    "technologies": ["Python", "JavaScript", "HTML/CSS", "Scratch"]
+  },
+  {
+    "id": "cyc",
+    "logoKey": "cyc",
+    "jobTitle": "Youth Leader/Database Developer",
+    "company": "Code Your Chances",
+    "team": "STEM & Tech",
+    "date": "May 2024 – Aug 2024",
+    "location": "Chicago, IL",
+    "type": "Internship",
+    "field": "Database Development",
+    "overview": "Developed databases and instructed youth in STEM and technology concepts.",
+    "points": [
+      "Designed databases and schemas to store and manage student and program information.",
+      "Taught computer science fundamentals and logic through interactive workshops.",
+      "Managed data migration and query optimization."
+    ],
+    "technologies": ["SQL", "Databases", "STEM Education"]
+  },
+  {
+    "id": "acorn",
+    "logoKey": "acorn",
+    "jobTitle": "Front-end Developer Assistant Intern",
+    "company": "Acorn Genetics",
+    "team": "Front-end",
+    "date": "May 2024 – Aug 2024",
+    "location": "Chicago, IL",
+    "type": "Internship",
+    "field": "Web Development",
+    "overview": "Developed and styled web applications and user interfaces for DNA analytics.",
+    "points": [
+      "Created responsive user interfaces using modern web frameworks.",
+      "Styled interfaces to meet design specifications.",
+      "Collaborated on front-end components and page integrations."
+    ],
+    "technologies": ["React", "HTML/CSS", "JavaScript", "Git"]
+  },
+  {
+    "id": "csk",
+    "logoKey": "csk",
+    "jobTitle": "Coding Club President",
+    "company": "CompSciKids",
+    "team": "Leadership",
+    "date": "May 2024 – Aug 2024",
+    "location": "Chicago, IL",
+    "type": "Leadership",
+    "field": "Education",
+    "overview": "Led coding clubs and workshops teaching CS concepts to kids.",
+    "points": [
+      "Founded and managed the CompSciKids coding club.",
+      "Curated curricula and taught introductory coding to young kids.",
+      "Organized coding events and workshops."
+    ],
+    "technologies": ["Python", "Scratch", "Leadership"]
+  }
+]

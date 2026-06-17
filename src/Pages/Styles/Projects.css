@@ -1,38 +1,93 @@
-#projects{
-    background-image: linear-gradient(#01010c, #050313);
-    color: rgb(255, 255, 255);
-
-    display:flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    gap:50px;
-    
-    /* padding: 20px 100px 0px 100px;    */
-    /* width: 100%; */
-}
-
-.allProjects{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-.IndividualProjects{
-    /* width: 100px; */
-    height: 100px;
-}
-
-.Projects{
+#projects {
+    /* background: #01010c; */
+    color: #ffffff;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    gap: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Projects Title layout */
+.projects-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 10px;
+    z-index: 5;
+}
+
+.projects-title-wrapper {
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    gap: 16px;
+    width: 100%;
+}
+
+.projects-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 4vw, 45px);
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #caa355 0%, #f1d399 50%, #caa355 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projects-title-line-left,
+.projects-title-line-right {
+    height: 1px;
+    width: 100px;
+}
+
+.projects-title-line-left {
+    background: linear-gradient(to right, rgba(202, 163, 85, 0) 0%, rgba(202, 163, 85, 0.4) 100%);
+}
+
+.projects-title-line-right {
+    background: linear-gradient(to left, rgba(202, 163, 85, 0) 0%, rgba(202, 163, 85, 0.4) 100%);
+}
+
+.projects-title-diamond {
+    color: rgba(202, 163, 85, 0.75);
+    font-size: 10px;
+}
+
+.projects-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(16px, 1.8vw, 20px);
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.projects-carousel-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 960px) {
+    #projects {
+        padding: 60px 16px;
+        gap: 30px;
+    }
+
+    .projects-title-line-left,
+    .projects-title-line-right {
+        width: 50px;
+    }
 }

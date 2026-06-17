@@ -1,0 +1,98 @@
+[
+  {
+    "name": "PersonalWebsite",
+    "shortDescription": "My Personal Website",
+    "link": "https://github.com/ZeelPatel1024/PersonalWebsite",
+    "date": "2025",
+    "imageKey": "PersonalWebsite",
+    "languagesList": ["React", "CSS"]
+  },
+  {
+    "name": "SnapLink",
+    "shortDescription": "Hackathon project for small buisnesses",
+    "link": "https://github.com/ZeelPatel1024/SparkHackProject",
+    "date": "2025",
+    "imageKey": "SnapLink",
+    "languagesList": ["Next.js", "MongoDB", "SpringBoot"]
+  },
+  {
+    "name": "Mplate",
+    "shortDescription": "One stop shop for working moms",
+    "link": "https://github.com/ZeelPatel1024",
+    "date": "2023",
+    "imageKey": "Mplate",
+    "languagesList": ["React", "Firebase"]
+  },
+  {
+    "name": "Grocrify",
+    "shortDescription": "Grocery shopping and todo list app",
+    "link": "https://github.com/ZeelPatel1024/Grocrify",
+    "date": "2022",
+    "imageKey": "Grocrify",
+    "languagesList": ["Java", "Firebase"]
+  },
+  {
+    "name": "Epic Study Game",
+    "shortDescription": "Creative way to study in a game",
+    "link": "https://github.com/ZeelPatel1024/The-Epic-Study-Game",
+    "date": "2021",
+    "imageKey": "Epic Study Game",
+    "languagesList": ["JS", "HTML", "CSS"]
+  },
+  {
+    "name": "Frogger",
+    "shortDescription": "Interactive game of frogger",
+    "link": "https://github.com/ZeelPatel1024/Frogger",
+    "date": "2020",
+    "imageKey": "Frogger",
+    "languagesList": ["JS", "HTML", "CSS"]
+  },
+  {
+    "name": "Jeopardy",
+    "shortDescription": "Simplified game of Jeopardy!",
+    "link": "https://github.com/ZeelPatel1024/Jeopardy-Game",
+    "date": "2020",
+    "imageKey": "Jeopardy",
+    "languagesList": ["JS", "HTML", "CSS"]
+  },
+  {
+    "name": "Mikey Mouse Escape Room",
+    "shortDescription": "Escape room interactive 2d game",
+    "link": "https://github.com/ZeelPatel1024/Mikey-Mouse-Escape-Room-",
+    "date": "2022",
+    "imageKey": "Mikey Mouse Escape Room",
+    "languagesList": ["JS", "HTML", "CSS"]
+  },
+  {
+    "name": "Battle Of Billionares",
+    "shortDescription": "Billionares fight simulator",
+    "link": "https://github.com/ZeelPatel1024/Battle-Of-Billionares",
+    "date": "2023",
+    "imageKey": "Battle Of Billionares",
+    "languagesList": ["Java", "JavaFx"]
+  },
+  {
+    "name": "RubeGoldberg Machine",
+    "shortDescription": "RubeGoldberg style animation",
+    "link": "https://github.com/ZeelPatel1024/Rube-Goldberg-Mashine",
+    "date": "2023",
+    "imageKey": "RubeGoldberg Machine",
+    "languagesList": ["P5.js"]
+  },
+  {
+    "name": "Rummy",
+    "shortDescription": "Java game of Rummy",
+    "link": "https://github.com/ZeelPatel1024/Rummy-Card-Game",
+    "date": "2022",
+    "imageKey": "Rummy",
+    "languagesList": ["Java"]
+  },
+  {
+    "name": "WordSearch",
+    "shortDescription": "Java game of WordSearch",
+    "link": "https://github.com/ZeelPatel1024/Wordsearch-Game",
+    "date": "2022",
+    "imageKey": "WordSearch",
+    "languagesList": ["Java"]
+  }
+]

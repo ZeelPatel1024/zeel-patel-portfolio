@@ -1,23 +1,144 @@
-.carousel {
+.carousel-container {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    /* gap: 10px; */
-  }
-  
-  .carousel-window {
-    overflow: hidden;
-    width: 1232px; /* 3 items * 400px + 2 * 16px gap */
-    /* gap: 10px; */
-  }
-  
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-.carousel-item {
-    flex: 0 0 350px;
-    /* gap: 10px; */
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px 45px 60px;
+    box-sizing: border-box;
 }
-  
+
+.carousel-window {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.carousel-item {
+    box-sizing: border-box;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item-inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Nav Button Styling */
+.carousel-nav-btn {
+    position: absolute;
+    top: calc(50% - 22px); /* Centered vertically offset by half of padding bottom */
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(1, 1, 12, 0.75);
+    border: 1px solid rgba(202, 163, 85, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #caa355;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 0;
+}
+
+.carousel-nav-btn:hover:not(:disabled) {
+    background: rgba(202, 163, 85, 0.12);
+    border-color: #e6c387;
+    color: #e6c387;
+    box-shadow: 0 0 15px rgba(202, 163, 85, 0.4);
+    transform: translateY(-50%) scale(1.06);
+}
+
+.carousel-nav-btn:active:not(:disabled) {
+    transform: translateY(-50%) scale(0.96);
+}
+
+.carousel-nav-btn:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+    border-color: rgba(202, 163, 85, 0.15);
+    color: rgba(202, 163, 85, 0.25);
+    box-shadow: none;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.carousel-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+/* Pagination Dots */
+.carousel-dots {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 5;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(202, 163, 85, 0.3);
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.carousel-dot:hover {
+    background: rgba(202, 163, 85, 0.6);
+}
+
+.carousel-dot.active {
+    width: 22px;
+    border-radius: 4px;
+    background: #caa355;
+    box-shadow: 0 0 8px rgba(202, 163, 85, 0.65);
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 0 45px 35px 45px;
+    }
+
+    .carousel-nav-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .carousel-arrow {
+        width: 16px;
+        height: 16px;
+    }
+
+    .carousel-item {
+        padding: 10px 12px;
+    }
+}
