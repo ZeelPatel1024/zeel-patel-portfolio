@@ -1,9 +1,8 @@
 import React, { useState, useRef } from 'react'
 import './Styles/Experience.css'
 import '../Components/AboutComp/AboutBoxComp.css'
-import twilightbackground from '../Images/twilightbackground.jpg'
 import JobComp from '../Components/ExperienceComp/JobComp'
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 import GoogleLogo from '../Images/jobsLogo/googlelogo.png'
 import CodeNinjasLogo from '../Images/jobsLogo/codeninjaslogo.png'
