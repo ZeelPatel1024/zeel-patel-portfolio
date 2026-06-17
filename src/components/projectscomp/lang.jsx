@@ -1,9 +1,9 @@
 import React from 'react'
-import './Courses.css'
+import './lang.css'
 
 function Courses(props) {
   return (
-    <div className='CourseBox'>
+    <div className='LangBox'>
         <p>{props.courseName}</p>
     </div>
   )

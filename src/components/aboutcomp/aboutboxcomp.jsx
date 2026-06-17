@@ -1,7 +1,7 @@
 import React from 'react'
-import './AboutBoxComp.css'
-import Courses from './Courses'
-import LineAndBorder from './LineAndBorder'
+import './aboutboxcomp.css'
+import Courses from './courses'
+import LineAndBorder from './lineandborder'
 
 function AboutBoxComp(props) {
   return (

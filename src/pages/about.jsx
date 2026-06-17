@@ -1,15 +1,15 @@
 import React from 'react'
-import './Styles/About.css'
+import './styles/about.css'
 
-import AboutBoxComp from '../Components/AboutComp/AboutBoxComp'
-import AboutBoxImgRight from '../Components/AboutComp/AboutBoxImgRight'
-import uicCardPic from '../Images/uicCardPic.png'
-import meCardPic from '../Images/meCardPic.png'
-import logo from '../Images/logo.png'
+import AboutBoxComp from '../components/aboutcomp/aboutboxcomp'
+import AboutBoxImgRight from '../components/aboutcomp/aboutboximgright'
+import uicCardPic from '../images/uiccardpic.png'
+import meCardPic from '../images/mecardpic.png'
+import logo from '../images/logo.png'
 
-import LineAndBorder from '../Components/AboutComp/LineAndBorder'
+import LineAndBorder from '../components/aboutcomp/lineandborder'
 import { motion } from "framer-motion"
-import Courses from '../Components/AboutComp/Courses'
+import Courses from '../components/aboutcomp/courses'
 
 export const About = () => {
   return (

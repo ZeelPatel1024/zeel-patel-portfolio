@@ -1,4 +1,4 @@
-import './Styles/Projects.css'
+import './styles/projects.css'
 import React from 'react';
 import { motion } from 'framer-motion';
 

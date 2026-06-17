@@ -1,7 +1,7 @@
 import React from 'react';
-import './Styles/Footer.css';
+import './styles/footer.css';
 import { HashLink as Link } from "react-router-hash-link";
-import myPDF from '../resume/Zeel_H_Patel_Resume__Updated_2026.pdf';
+import myPDF from '../resume/zeel_h_patel_resume__updated_2026.pdf';
 
 const Footer = () => {
   return (

@@ -1,11 +1,11 @@
 import React from 'react'
-import '../HomeComp/Header.css'
-import githublogo from '../../Images/githublogo.png'
-import emaillogo from '../../Images/gmaillogo.png'
-import documentlogo from '../../Images/documentlogo.png'
-import linkdinlogo from '../../Images/linkdinlogo.png'
+import './header.css'
+import githublogo from '../../images/githublogo.png'
+import emaillogo from '../../images/gmaillogo.png'
+import documentlogo from '../../images/documentlogo.png'
+import linkdinlogo from '../../images/linkdinlogo.png'
 import Typewriter from 'typewriter-effect';
-import myPDF from "../../resume/Zeel_H_Patel_Resume__Updated_2026.pdf";
+import myPDF from "../../resume/zeel_h_patel_resume__updated_2026.pdf";
 
 
 function Header() {

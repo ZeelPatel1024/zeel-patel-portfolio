@@ -1,19 +1,19 @@
-import './Styles/Projects.css'
+import './styles/projects.css'
 import React from 'react';
-import Project from '../Components/ProjectsComp/Project';
-import Carousel from '../Components/ProjectsComp/Carousel';
-import MPlate from '../Images/ProjectImages/MPlate.png'
-import BOB from '../Images/ProjectImages/BOB.jpg'
-import ESG from '../Images/ProjectImages/ESG.png'
-import Frogger from '../Images/ProjectImages/Frogger.png'
-import Grocrify from '../Images/ProjectImages/Grocrify.png'
-import Jeopardy from '../Images/ProjectImages/Jeopardy.jpg'
-import MMER from '../Images/ProjectImages/MMER.png'
-import PersonalWebsite from '../Images/ProjectImages/PersonalWebsite.png'
-import RubeGoldberg from '../Images/ProjectImages/RubeGoldberg.png'
-import Rummy from '../Images/ProjectImages/Rummy.jpg'
-import SnapLink from '../Images/ProjectImages/SnapLink.png'
-import WordSearch from '../Images/ProjectImages/WordsearchGame.png'
+import Project from '../components/projectscomp/project';
+import Carousel from '../components/projectscomp/carousel';
+import MPlate from '../images/projectimages/mplate.png'
+import BOB from '../images/projectimages/bob.jpg'
+import ESG from '../images/projectimages/esg.png'
+import Frogger from '../images/projectimages/frogger.png'
+import Grocrify from '../images/projectimages/grocrify.png'
+import Jeopardy from '../images/projectimages/jeopardy.jpg'
+import MMER from '../images/projectimages/mmer.png'
+import PersonalWebsite from '../images/projectimages/personalwebsite.png'
+import RubeGoldberg from '../images/projectimages/rubegoldberg.png'
+import Rummy from '../images/projectimages/rummy.jpg'
+import SnapLink from '../images/projectimages/snaplink.png'
+import WordSearch from '../images/projectimages/wordsearchgame.png'
 import projectsData from '../data/projects.json';
 import { motion } from 'framer-motion';
 

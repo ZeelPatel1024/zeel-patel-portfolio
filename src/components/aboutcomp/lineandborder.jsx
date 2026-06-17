@@ -1,5 +1,5 @@
 import React from 'react'
-import './LineAndBorder.css'
+import './lineandborder.css'
 
 function LineAndBorder(props) {
   return (

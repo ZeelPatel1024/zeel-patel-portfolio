@@ -1,5 +1,5 @@
 import React from 'react'
-import './Style/JobComp.css'
+import './style/jobcomp.css'
 
 function JobComp({ logo, logoKey, jobTitle, jobName, date, onClick }) {
   return (

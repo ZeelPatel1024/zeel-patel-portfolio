@@ -1,4 +1,4 @@
-import './SkillsComp.css'
+import './skillscomp.css'
 import React from 'react'
 
 

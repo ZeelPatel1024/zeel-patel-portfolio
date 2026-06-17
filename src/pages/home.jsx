@@ -1,13 +1,13 @@
 import React from 'react'
-import backgroundToronto from '../Images/newnewtoronto.jpg'
-import backgroundChicago from '../Images/newchicago.jpg'
-import backgroundSanFran from '../Images/newsanfran.jpg'
+import backgroundToronto from '../images/newnewtoronto.jpg'
+import backgroundChicago from '../images/newchicago.jpg'
+import backgroundSanFran from '../images/newsanfran.jpg'
 
 import { useEffect, useState } from 'react'
 
-import Header from '../Components/HomeComp/Header'
-import Navbar from '../Components/Navbar'
-import './Styles/Home.css'
+import Header from '../components/homecomp/header'
+import Navbar from '../components/navbar'
+import './styles/home.css'
 
 const backgrounds = [backgroundToronto, backgroundChicago, backgroundSanFran];
 

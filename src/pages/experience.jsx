@@ -1,15 +1,15 @@
 import React, { useState, useRef } from 'react'
-import './Styles/Experience.css'
-import '../Components/AboutComp/AboutBoxComp.css'
-import JobComp from '../Components/ExperienceComp/JobComp'
+import './styles/experience.css'
+import '../components/aboutcomp/aboutboxcomp.css'
+import JobComp from '../components/experiencecomp/jobcomp'
 import { motion, AnimatePresence } from "framer-motion"
 
-import GoogleLogo from '../Images/jobsLogo/googlelogo.png'
-import CodeNinjasLogo from '../Images/jobsLogo/codeninjaslogo.png'
-import CskLogo from '../Images/jobsLogo/csklogo.png'
-import CycLogo from '../Images/jobsLogo/cyclogo.webp'
-import AcornLogo from '../Images/jobsLogo/acornlogo.jpeg'
-import WiCSLogo from '../Images/jobsLogo/wics.png'
+import GoogleLogo from '../images/jobslogo/googlelogo.png'
+import CodeNinjasLogo from '../images/jobslogo/codeninjaslogo.png'
+import CskLogo from '../images/jobslogo/csklogo.png'
+import CycLogo from '../images/jobslogo/cyclogo.webp'
+import AcornLogo from '../images/jobslogo/acornlogo.jpeg'
+import WiCSLogo from '../images/jobslogo/wics.png'
 
 import experiencesData from '../data/experiences.json'
 

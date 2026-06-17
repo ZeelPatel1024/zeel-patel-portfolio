@@ -1,6 +1,6 @@
 import React from 'react'
-import './Project.css'
-import Courses from './Lang'
+import './project.css'
+import Courses from './lang'
 
 // Dynamic icon selector based on project name
 const getProjectIcon = (name) => {
