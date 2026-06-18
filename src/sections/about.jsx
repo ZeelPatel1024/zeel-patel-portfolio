@@ -53,6 +53,8 @@ export const About = () => {
                 <Courses courseName="Dancing" />
                 <Courses courseName="Arts & Crafts" />
                 <Courses courseName="Traveling" />
+                <Courses courseName="Joking around xD" />
+                <Courses courseName="Writing stories" />
               </div>
             </div>
           </div>
@@ -72,10 +74,9 @@ export const About = () => {
             picture={uicCardPic.src}
             compdescription={
               <>
-                I completed my <span className="highlight-gold">high school</span> diploma at James B Conant High School where I took Computer Science and AP Classes. Furthermore, I am pursuing a <span className="highlight-gold">Bachelor's in Engineering Science in Computer Science</span> at the University of Illinois at Chicago.
+                I completed my <span className="highlight-gold">high school</span> diploma at James B Conant High School where I took Computer Science and AP Classes. Furthermore, I am pursuing a <span className="highlight-gold">Bachelor's of Science in Computer Science</span> at the University of Illinois at Chicago.
               </>
             }
-            moreinfo="UIC GPA: 4.0 &#124; AP CSP: 5 &#124; AP CSA: 4 &#124; AP Calc B: 4 &#124; AP Phys C: 4"
           />
         </motion.div>
 

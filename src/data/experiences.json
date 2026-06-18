@@ -1,5 +1,21 @@
 [
   {
+    "id": "datadog",
+    "logoKey": "datadog",
+    "jobTitle": "Software Engineering Intern",
+    "company": "Datadog",
+    "team": "SRE/Security",
+    "date": "May 2026 – Present",
+    "location": "Remote",
+    "type": "Internship",
+    "field": "Software Engineering",
+    "overview": "Internship in progress. Excited to share more once I'm able to!",
+    "points": [
+      "Coming soon!"
+    ],
+    "technologies": ["Coming soon!"]
+  },
+  {
     "id": "google-ads",
     "logoKey": "google",
     "jobTitle": "Associate Software Developer Intern",

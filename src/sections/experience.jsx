@@ -12,6 +12,7 @@ import CskLogo from '../images/jobslogo/csklogo.png'
 import CycLogo from '../images/jobslogo/cyclogo.webp'
 import AcornLogo from '../images/jobslogo/acornlogo.jpeg'
 import WiCSLogo from '../images/jobslogo/wics.png'
+import DatadogLogo from '../images/jobslogo/datadoglogo.png'
 
 import experiencesData from '../data/experiences.json'
 
@@ -21,7 +22,8 @@ const logoMap = {
   codeninjas: CodeNinjasLogo,
   csk: CskLogo,
   cyc: CycLogo,
-  acorn: AcornLogo
+  acorn: AcornLogo,
+  datadog: DatadogLogo
 };
 
 export const Experience = () => {
@@ -225,7 +227,7 @@ export const Experience = () => {
                       </svg>
                     </div>
                   ) : (
-                    <img className="modal-job-logo" src={logoMap[selectedJob.logoKey]} alt={selectedJob.jobTitle} />
+                    <img className="modal-job-logo" src={logoMap[selectedJob.logoKey]?.src || logoMap[selectedJob.logoKey]} />
                   )}
                 </div>
 

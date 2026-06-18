@@ -16,16 +16,16 @@ function Header() {
     <div className='NameComponent'>
 
       <div className='nameBox'>
-        <p className="tagline">&lt;CODE. CREATE. IMPACT /&gt;</p>
+        <p className="tagline">&lt;/Hi there! I am&gt;</p>
         <h1 id="Name">Zeel Patel</h1>
-        
+
         <div className="subtitle-container">
           <div className="subtitle-line left"></div>
           <div id="description">
             &lt;/&nbsp;
             <Typewriter
               options={{
-                strings: ['DEVELOPER', 'GOOGLER', 'ENGINEER', 'SWE'],
+                strings: ['DEVELOPER', 'ARTIST', 'SOFTWARE ENGINEER', 'CREATOR', 'LEADER','INNOVATOR', ':)'],
                 autoStart: true,
                 loop: true,
                 delay: 75,
@@ -49,7 +49,7 @@ function Header() {
           >
             <img id="emaillogo" src={emaillogo.src} alt="Email Logo"></img>
           </a>
-          
+
           <a href={myPDF} target="_blank" rel="noopener noreferrer">
             <img id="githublogo" src={documentlogo.src} alt="Document Logo"></img>
           </a>

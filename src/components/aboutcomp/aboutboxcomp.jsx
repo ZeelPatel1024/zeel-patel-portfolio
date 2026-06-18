@@ -59,10 +59,12 @@ function AboutBoxComp(props) {
           <div className="about-box-courses-section">
             <p className="courses-label">Relevant Courses:</p>
             <div className="courses-tags-container">
+              <Courses courseName="Data Structures" />
+              <Courses courseName="Algorithms" />
+               <Courses courseName="Principles of Concurrency" />
               <Courses courseName="Program Design 2" />
               <Courses courseName="Discrete Math" />
               <Courses courseName="Programming Practicum" />
-              <Courses courseName="Data Structures" />
             </div>
           </div>
         </div>

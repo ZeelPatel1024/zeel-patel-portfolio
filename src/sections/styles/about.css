@@ -80,6 +80,7 @@
     color: rgba(255, 255, 255, 0.85);
     text-align: right; /* Anchored to the right */
     max-width: 700px;
+    font-size: 20px;
 }
 
 #me .highlight-gold {
