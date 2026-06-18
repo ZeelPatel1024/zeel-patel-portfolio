@@ -5,7 +5,7 @@ import './styles/footer.css';
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 
-const myPDF = '/resume/zeel_h_patel_resume__updated_2026.pdf';
+const myPDF = '/resume/zeel_resume_2026.pdf';
 
 const Footer = () => {
   const pathname = usePathname();

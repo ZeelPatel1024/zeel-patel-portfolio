@@ -8,7 +8,7 @@ import documentlogo from '../../images/documentlogo.png'
 import linkdinlogo from '../../images/linkdinlogo.png'
 import Typewriter from 'typewriter-effect';
 
-const myPDF = "/resume/zeel_h_patel_resume__updated_2026.pdf";
+const myPDF = "/resume/zeel_resume_2026.pdf";
 
 
 function Header() {

@@ -25,8 +25,8 @@ export const About = () => {
       >
         <LineAndBorder
           text="h1"
-          textColor='DodgerBlue'
-          borderColor='#32337d'
+          textColor='#e7ce8f'
+          borderColor='#e7ce8f'
         />
         <div className='whoAmIComponent'>
           {/* Monogram Watermark */}

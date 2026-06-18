@@ -72,8 +72,8 @@ function AboutBoxComp(props) {
       
       <LineAndBorder
         text="h1"
-        textColor='Violet'
-        borderColor='#74317d'
+        textColor='#e7ce8f'
+        borderColor='#e7ce8f'
       />
     </div>
   )
