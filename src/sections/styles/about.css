@@ -182,3 +182,12 @@
         transform: translate(-50%, -50%) scale(1.03);
     }
 }
+
+@media (max-width: 768px) {
+    #about {
+        padding: 20px 20px 0px 20px;
+    }
+    .deco {
+        display: none;
+    }
+}

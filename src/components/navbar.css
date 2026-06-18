@@ -140,6 +140,10 @@ nav ul li a.active::before {
     }
 }
 
+nav .menu {
+    display: none;
+}
+
 /* Mobile responsive menu */
 @media (max-width: 780px) {
     nav {
