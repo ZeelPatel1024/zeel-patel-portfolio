@@ -41,7 +41,7 @@ function AboutBoxComp(props) {
         </svg>
 
         {/* Card stacked picture of UIC */}
-        <img id="compPic" src={props.picture} alt="UIC Card Stack" />
+        <img id="compPic" src={props.picture?.src || props.picture} alt="UIC Card Stack" />
         
         {/* Card text content */}
         <div className="about-box-content">

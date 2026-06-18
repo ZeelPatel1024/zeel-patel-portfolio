@@ -18,7 +18,7 @@ function JobComp({ logo, logoKey, jobTitle, jobName, date, onClick }) {
               </svg>
             </div>
           ) : (
-            <img className='jobCardLogo' src={logo} alt={jobTitle} />
+            <img className='jobCardLogo' src={logo?.src || logo} alt={jobTitle} />
           )}
         </div>
 

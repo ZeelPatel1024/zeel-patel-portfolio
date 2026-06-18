@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useRef } from 'react'
 import './styles/experience.css'
 import '../components/aboutcomp/aboutboxcomp.css'

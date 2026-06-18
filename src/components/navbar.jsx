@@ -1,12 +1,14 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import "./navbar.css";
-import { HashLink as Link } from "react-router-hash-link";
-import { useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const location = useLocation();
+    const pathname = usePathname();
     const [activeSection, setActiveSection] = useState("");
 
     useEffect(() => {
@@ -24,7 +26,7 @@ function Navbar() {
     }, [scrolled]);
 
     useEffect(() => {
-        if (location.pathname === "/leadership") {
+        if (pathname === "/leadership") {
             setActiveSection("leadership");
             return;
         }
@@ -46,22 +48,34 @@ function Navbar() {
         handleSectionHighlight();
         window.addEventListener("scroll", handleSectionHighlight);
         return () => window.removeEventListener("scroll", handleSectionHighlight);
-    }, [location]);
+    }, [pathname]);
 
-    const scrollWithOffset = (el) => {
-        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-        const yOffset = -80;
-        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
-    }
+    const handleNavClick = (e, targetId) => {
+        if (pathname === "/") {
+            e.preventDefault();
+            const el = document.getElementById(targetId);
+            if (el) {
+                const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+                const yOffset = -80;
+                window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+            }
+            setActiveSection(targetId);
+            setMenuOpen(false);
+        } else {
+            setMenuOpen(false);
+        }
+    };
 
     return (
         <nav className={scrolled ? "scrolled" : ""}>
             <Link 
-                smooth 
-                to="/#" 
+                href="/#" 
                 className="title-container" 
-                onClick={() => {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                onClick={(e) => {
+                    if (pathname === "/") {
+                        e.preventDefault();
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
                     setMenuOpen(false);
                 }}
             >
@@ -117,33 +131,27 @@ function Navbar() {
             <ul className={menuOpen ? "open" : ""}>
                 <li>
                     <Link 
-                        smooth 
-                        to="/#about" 
-                        scroll={el => scrollWithOffset(el)}
+                        href="/#about" 
                         className={activeSection === "about" ? "active" : ""}
-                        onClick={() => setMenuOpen(false)}
+                        onClick={(e) => handleNavClick(e, "about")}
                     >
                         About
                     </Link>
                 </li>
                 <li>
                     <Link 
-                        smooth 
-                        to="/#experience" 
-                        scroll={el => scrollWithOffset(el)}
+                        href="/#experience" 
                         className={activeSection === "experience" ? "active" : ""}
-                        onClick={() => setMenuOpen(false)}
+                        onClick={(e) => handleNavClick(e, "experience")}
                     >
                         Experience
                     </Link>
                 </li>
                 <li>
                     <Link 
-                        smooth
-                        to="/#projects"
-                        scroll={el => scrollWithOffset(el)}
+                        href="/#projects"
                         className={activeSection === "projects" ? "active" : ""}
-                        onClick={() => setMenuOpen(false)}
+                        onClick={(e) => handleNavClick(e, "projects")}
                     >
                         Projects
                     </Link>

@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import backgroundToronto from '../images/newnewtoronto.jpg'
 import backgroundChicago from '../images/newchicago.jpg'
@@ -9,7 +11,7 @@ import Header from '../components/homecomp/header'
 import Navbar from '../components/navbar'
 import './styles/home.css'
 
-const backgrounds = [backgroundToronto, backgroundChicago, backgroundSanFran];
+const backgrounds = [backgroundToronto.src, backgroundChicago.src, backgroundSanFran.src];
 
 export const Home = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);

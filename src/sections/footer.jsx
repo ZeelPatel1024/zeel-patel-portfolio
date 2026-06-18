@@ -1,9 +1,27 @@
+"use client";
+
 import React from 'react';
 import './styles/footer.css';
-import { HashLink as Link } from "react-router-hash-link";
-import myPDF from '../resume/zeel_h_patel_resume__updated_2026.pdf';
+import Link from "next/link";
+import { usePathname } from 'next/navigation';
+
+const myPDF = '/resume/zeel_h_patel_resume__updated_2026.pdf';
 
 const Footer = () => {
+  const pathname = usePathname();
+
+  const handleNavClick = (e, targetId) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      const el = document.getElementById(targetId);
+      if (el) {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -80;
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <footer className="footer-outer">
       {/* Outer wrapper with border and ornaments */}
@@ -100,7 +118,7 @@ const Footer = () => {
 
             <ul className="footer-links-list">
               <li>
-                <Link smooth spy to="#about" className="footer-link-item">
+                <Link href="/#about" onClick={(e) => handleNavClick(e, 'about')} className="footer-link-item">
                   <span className="link-icon-circle">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="footer-link-icon-svg">
                       <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
@@ -111,7 +129,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link smooth spy to="#experience" className="footer-link-item">
+                <Link href="/#experience" onClick={(e) => handleNavClick(e, 'experience')} className="footer-link-item">
                   <span className="link-icon-circle">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="footer-link-icon-svg">
                       <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
@@ -122,7 +140,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link smooth spy to="#projects" className="footer-link-item">
+                <Link href="/#projects" onClick={(e) => handleNavClick(e, 'projects')} className="footer-link-item">
                   <span className="link-icon-circle">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="footer-link-icon-svg">
                       <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />

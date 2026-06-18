@@ -1,3 +1,5 @@
+"use client";
+
 import './styles/projects.css'
 import React from 'react';
 import Project from '../components/projectscomp/project';

@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import './styles/about.css'
 
@@ -28,7 +30,7 @@ export const About = () => {
         />
         <div className='whoAmIComponent'>
           {/* Monogram Watermark */}
-          <img className="about-box-watermark monogram-watermark" src={logo} alt="Monogram Watermark" />
+          <img className="about-box-watermark monogram-watermark" src={logo.src} alt="Monogram Watermark" />
 
           <div className='WhoAmIDescription'>
             <div className="about-box-title-container">
@@ -54,7 +56,7 @@ export const About = () => {
               </div>
             </div>
           </div>
-          <img className="about-profile-card" src={meCardPic} alt="Zeel Patel" />
+          <img className="about-profile-card" src={meCardPic.src} alt="Zeel Patel" />
         </div>
       </motion.div>
 
@@ -67,7 +69,7 @@ export const About = () => {
           }} initial={{ x: '10vw', opacity: 0 }}>
           <AboutBoxComp
             title="Education"
-            picture={uicCardPic}
+            picture={uicCardPic.src}
             compdescription={
               <>
                 I completed my <span className="highlight-gold">high school</span> diploma at James B Conant High School where I took Computer Science and AP Classes. Furthermore, I am pursuing a <span className="highlight-gold">Bachelor's in Engineering Science in Computer Science</span> at the University of Illinois at Chicago.

@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import './header.css'
 import githublogo from '../../images/githublogo.png'
@@ -5,7 +7,8 @@ import emaillogo from '../../images/gmaillogo.png'
 import documentlogo from '../../images/documentlogo.png'
 import linkdinlogo from '../../images/linkdinlogo.png'
 import Typewriter from 'typewriter-effect';
-import myPDF from "../../resume/zeel_h_patel_resume__updated_2026.pdf";
+
+const myPDF = "/resume/zeel_h_patel_resume__updated_2026.pdf";
 
 
 function Header() {
@@ -18,7 +21,7 @@ function Header() {
         
         <div className="subtitle-container">
           <div className="subtitle-line left"></div>
-          <p id="description">
+          <div id="description">
             &lt;/&nbsp;
             <Typewriter
               options={{
@@ -30,13 +33,13 @@ function Header() {
               }}
             />
             &nbsp;&gt;
-          </p>
+          </div>
           <div className="subtitle-line right"></div>
         </div>
 
         <div className='logos'>
           <a href="https://github.com/ZeelPatel1024" target="_blank" rel="noopener noreferrer">
-            <img id="githublogo" src={githublogo} alt="GitHub Logo" ></img>
+            <img id="githublogo" src={githublogo.src} alt="GitHub Logo" ></img>
           </a>
 
           <a
@@ -44,15 +47,15 @@ function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img id="emaillogo" src={emaillogo} alt="Email Logo"></img>
+            <img id="emaillogo" src={emaillogo.src} alt="Email Logo"></img>
           </a>
           
           <a href={myPDF} target="_blank" rel="noopener noreferrer">
-            <img id="githublogo" src={documentlogo} alt="Document Logo"></img>
+            <img id="githublogo" src={documentlogo.src} alt="Document Logo"></img>
           </a>
 
           <a href="https://www.linkedin.com/in/zeel-patel2212/" target="_blank" rel="noopener noreferrer">
-            <img id="githublogo" src={linkdinlogo} alt="LinkedIn Logo"></img>
+            <img id="githublogo" src={linkdinlogo.src} alt="LinkedIn Logo"></img>
           </a>
         </div>
         <br></br>

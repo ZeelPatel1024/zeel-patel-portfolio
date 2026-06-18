@@ -102,7 +102,7 @@ const Project = ({ image, languagesList, name, shortDescription, date, link }) =
 
         {/* Project Image Container with Soft Dark Mask */}
         <div className="project-image-container">
-          <img id="projectimg" src={image} alt={name}></img>
+          <img id="projectimg" src={image?.src || image} alt={name}></img>
           <div className="project-image-overlay"></div>
         </div>
 
